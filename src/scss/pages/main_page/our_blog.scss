@@ -1,0 +1,91 @@
+// Note: This is an example of components style, so please remove it or re-write it on your styles.
+article {
+	display: flex;
+	justify-content: space-between;
+	min-height: 480px;
+	color: #fff;
+}
+article section {
+	padding: 70px 50px 0 50px;
+	min-width: 480px;
+	max-height: 480px;
+	background: $primary_orange;
+}
+.item_cofee, .item_car, .item_watch, .item_road {
+	background-size: cover;
+	z-index: 5;
+}
+.item_cofee {
+	background-image: url(../images/section_item1.png);
+}
+.item_watch {
+	background-image: url(../images/section_item2.png);
+}
+.item_road {
+	background-image: url(../images/section_item3.png);
+}
+.item_car {
+	background-image: url(../images/section_item4.png);
+}
+
+.pointer-left, .pointer-right{
+	position: relative;
+}
+.pointer-left:before, .pointer-right:before {
+	content: '';
+	position: absolute;
+	top: 44%;
+	z-index: 50;
+	border: 35px solid transparent;	
+}
+.pointer-left:before {
+	left: -60px;
+	border-right: 27px solid $primary_orange;
+}
+.pointer-right:before {
+	right: -60px;
+	border-left: 27px solid $primary_orange;
+}
+
+
+article h3 {
+	font-family: Source Sans Pro;
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 25px;
+}
+article h3:after {
+	content: '';
+	display: block;
+	margin: 15px 0 40px 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	height: 4px;
+	width: 44px;
+}
+article p {
+	line-height: 2;
+	margin-bottom: 50px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: $primary_white;
+} 
+article section > span {
+font-size: 1.4rem;
+} 
+article a {
+	font-weight: 600;
+	font-style: italic;
+	font-size: 1.8rem;
+	text-transform: capitalize;
+}
+
+.blur{
+	transition: filter 1s;
+ filter:  grayscale(100%);
+}
+article a:hover{
+	color: #000;
+}

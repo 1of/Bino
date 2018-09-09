@@ -1,0 +1,220 @@
+// Note: This is an example of components style, so please remove it or re-write it on your styles.
+
+
+header {
+  position: relative;
+}
+a {
+  color: $primary_white;
+  font-family: Open Sans;
+}
+
+nav {
+  z-index: 100;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40px;
+  text-transform: uppercase;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+div.logo {
+  max-width: 400px;
+  transition: all 0.3s;
+}
+div.logo:hover {
+  color: red;
+  border: 3px solid $primary_orange;
+  background: #444;
+
+}
+ul {
+  list-style-type: none;
+  height: 100%;
+  font-size: 1.4rem;
+}
+li {
+  float: left;
+  margin-left: 55px;
+  vertical-align: middle;
+}
+li a{
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  height: 100%;
+}
+li a:hover {
+  color: $primary_orange;
+  border-bottom: 1px solid $primary_orange;
+}
+
+.menu-active {
+  color: $primary_orange;
+  border-bottom: 1px solid $primary_orange;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.logo {
+  display: block;
+  height: 100%;
+  width: 140px;
+  border: 3px solid $primary_white;
+  font-size: 3.6rem;
+  display: flex;
+}
+.log-item1 {
+  font-weight: bold;
+  color: #4a4c55;
+  margin: auto;
+  background: $primary_white;
+  border: 2px solid $primary_white;
+  padding: 0 12px 0 12px;
+
+}
+.log-item2 {
+ font-weight: 300;
+ color: $primary_white;
+ margin: auto;
+ padding: 0 10px 0 10px;
+}
+
+.carousel {
+  height: 100vh;
+}
+div.foreground {
+  position: relative;
+  z-index: -5;
+}
+div.foreground img{
+  height: 100vh;
+
+}
+.bg-black {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.carousel-item {
+  position: relative;
+  text-align: center;
+}
+.carousel-item div.w-100{
+  position: absolute;
+  margin-top: 320px;
+}
+
+.carousel-item h1 {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 7.2rem;
+  margin-top: 25px;
+  letter-spacing: 5px;
+  color: #f4f5f9;
+}
+.carousel-item h3 {
+  font-family: Source Sans Pro;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  color: #f4f5f9;
+}
+.carousel-item p {
+  font-family: Open Sans;
+  font-size: 1.4rem;
+  color: #cbc6c0;
+  margin-bottom: 60px;
+  line-height: 2.4rem;
+}
+.dot {
+  color: $primary_orange;
+  font-size: 3rem;
+  display: flex;
+  position: relative;
+  width: 30px;
+  text-align: center;
+  line-height: 0;
+  margin-bottom: 42px;
+  margin-right: 25px;
+}
+.dot:after{
+  content: "";
+  position: absolute;
+  right: 50px;
+  width: 80px;
+  height: 1px;
+  background: #fff;
+}
+.dot:before{
+  content: "";
+  position: absolute;
+  left: 30px;
+  width: 80px;
+  height: 1px;
+  background: #fff;
+}
+
+.carousel-item .row {
+  display: flex;
+  justify-content: center;
+}
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 46%;
+  background: #cbc6c0;
+  width: 40px;
+  height: 40px;
+  font-weight: 100;
+  font-size: 32px;
+  border-radius: 3px;
+}
+.carousel-control-prev {
+  left: 45px;
+}
+.carousel-control-next {
+  right: 45px;
+}
+a.carousel-control-next:hover, a.carousel-control-prev:hover{
+ background-color: $primary_orange;
+}
+.btn {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 225px;
+  height: 52px;
+  padding-top: 15px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.btn-orange:hover {
+  color: $primary_white;
+  background: transparent;
+  border: 1px solid $primary_white;;
+}
+.btn-orange {
+  background: $primary_orange;
+  margin-right: 25px;
+}
+.btn-transparent {
+  border: 1px solid #fff;
+  margin-left: 25px;
+}
+a.btn-transparent:hover{
+  color: $primary_white;
+  border: 1px solid $primary_orange;
+  background: $primary_orange;
+}
+
+#carouselExampleControls {
+  background: rgba(0,0,0,0.9);
+}

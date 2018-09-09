@@ -1,0 +1,184 @@
+// Note: This is an example of components style, so please remove it or re-write it on your styles.
+@media (min-width: 480px) and (max-width: 1530px) {
+	.carousel-item div.w-100 {
+		margin-top: 150px;
+	}
+	article#portfolio {
+		justify-content: space-between;
+		height: 960px;	
+	}
+	li {
+		margin-left: 15px;
+	}
+	article{
+		display: flex;
+		justify-content: space-between;
+		height: 960px;
+		flex-wrap: wrap;
+	}
+	article section {
+		padding: 20px 20px 0 20px;
+		max-height: 480px;
+		min-width: 220px;
+		display: block;
+		background: $primary_orange;
+
+	}
+	.pointer-left, .pointer-right{
+		width: 50%;
+	}
+	.item_cofee, .item_car, .item_watch, .item_road {
+		background-size: cover;
+		width: 50%;
+		height: 480px;
+	}
+
+	//Hamburger
+	.mobile-menu {
+		display: block;
+		z-index: 150;
+	}
+	.display-toggle {
+		display: none;
+	}
+
+	div.mobile-menu {
+		align-self: center;
+		text-align: center;
+		background: rgba(0,0,0,0.2);
+		margin-right: 14px;
+		font-size: 4rem;
+		padding: 0 5px 0 5px;
+		border-radius: 5px;
+		color: $primary_orange;
+	}
+	#nav-panel ul li {
+		width: 100%;
+		padding: 0 15px 0 15px;
+		background: rgba(0,0,0,0.6);
+		border-top-left-radius: 35px;
+		border-bottom-right-radius: 35px;
+		border-bottom-left-radius: 35px;
+	}
+	#nav-panel ul {
+		position: absolute;
+		display: block;
+		top: 50px;
+		display: flex;
+		flex-direction: column;
+		right: 30px;
+		text-align: center;
+	}
+	article p{
+		line-height: 1.4;
+	}
+}
+
+//tablets
+@media (min-width: 480px) and (max-width: 1024px) and (orientation: landscape) {
+	.carousel-item div.w-100 {
+		margin-top: 110px;
+	}
+}
+
+
+//phones
+@media (min-width: 320px) and (max-width: 480px) {
+	.carousel-item div.w-100 {
+		margin-top: 110px;
+	}
+	article#portfolio {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		height: auto;
+	}
+	article{
+		flex-direction: column-reverse;
+	}
+	article section {
+		padding: 20px 20px 20px 20px;
+		min-width: auto;
+		background: $primary_orange;
+	}
+	article h3:after {
+		margin: 5px 0 10px 0;
+	}
+	article p {
+		line-height: 1.1;
+		margin-bottom: 20px;
+	} 
+	.carousel-item h1 {
+		font-size: 3rem;
+	}
+	.promo h2, .promo p{
+		text-align: center;
+		padding: 0 15px 0 15px;
+	}
+	.carousel-item p {
+		line-height: 1.2rem;
+	}
+	.btn {
+		margin: 0 0 15px 0;
+	}
+	.social a {
+		margin-right: 20px;
+		padding-left: 20px;
+		font-size: 2rem;
+		color: #999999;
+	}
+	.item_cofee, .item_car, .item_watch, .item_road {
+		background-size: cover;
+		min-height: 480px;
+		z-index: -5;
+
+	}
+	.pointer-left:before, .pointer-right:before {
+		content: '';
+		position: absolute;
+		top: -75px;
+		left: 35%;
+		z-index: 5;
+		border: 55px solid transparent;	
+		right: 0;
+		width: 55px;
+		border-bottom: 27px solid $primary_orange;
+	}
+	//Hamburger
+	.mobile-menu {
+		display: block;
+		z-index: 150;
+	}
+	.display-toggle {
+		display: none;
+	}
+
+	div.mobile-menu {
+		align-self: center;
+		text-align: center;
+		background: rgba(0,0,0,0.2);
+		margin-right: 14px;
+		font-size: 4rem;
+		padding: 0 5px 0 5px;
+		border-radius: 5px;
+		color: $primary_orange;
+	}
+	#nav-panel ul li {
+		width: 80%;
+		padding: 0 15px 0 15px;
+		background: rgba(0,0,0,0.6);
+		border-top-left-radius: 35px;
+		border-bottom-right-radius: 35px;
+		border-bottom-left-radius: 35px;
+	}
+	#nav-panel ul {
+		position: absolute;
+		display: block;
+		top: 50px;
+		display: flex;
+		flex-direction: column;
+		right: 30px;
+		text-align: center;
+	}
+
+}
