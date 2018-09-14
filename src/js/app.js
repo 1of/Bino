@@ -18,10 +18,10 @@ import funcAnim from './modules/animation';
 	};
 
 	// When the user clicks on the button, scroll to the top of the document	 
-	document.getElementById("topBtn").onclick = function() {
+	$("#topBtn").on('click', function() {
       var top = $('li a').offset().top;
       $('body,html').animate({scrollTop: top}, 1500);
-	};
+	});
 
     // When the user clicks on menu item	 
   $('li a').on('click', function(event){
